@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html, body, #root {
+  height: 100%;
+}
+
+body {
+  font-feature-settings: "tnum";
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-thumb {
+  background: #2c3849;
+  border-radius: 4px;
+}
+
+.card {
+  @apply bg-base-850 border border-base-700 rounded-xl p-4 sm:p-5;
+}
+
+.section-title {
+  @apply text-sm font-semibold tracking-wide text-slate-300 uppercase flex items-center gap-2;
+}
